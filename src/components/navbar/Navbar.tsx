@@ -3,6 +3,7 @@ import s from './Navbar.module.css'
 import menuIcon from '../../assests/icons/burger-bar.png'
 import closeIcon from '../../assests/icons/close.png'
 import {Button} from "../button/Button";
+import {data} from "../../constants/constants";
 
 export const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -29,6 +30,8 @@ export const Navbar = () => {
 
   const menuImage = <img onClick={handleClick} className={s.menuIcon} src={click ? closeIcon : menuIcon} alt="menu"/>
 
+  const menuItems = data.map((item, i) => <li key={i} className={s.navItem}><a href="#">{item}</a></li>)
+
   return (
     <header className={s.header}>
       <div className={s.headerContainer}>
@@ -36,10 +39,9 @@ export const Navbar = () => {
           <h2 className={s.logo}>LOGO</h2>
           <nav>
             <ul className={click ? `${s.navMenu} ${s.navMenuActive}` : s.navMenu}>
-              <li className={s.navItem}><a href="#">Customers</a></li>
-              <li className={s.navItem}><a href="#">Products</a></li>
-              <li className={s.navItem}><a href="#">Features</a></li>
-              <li className={s.navItem}><a href="#">Contact us</a></li>
+              {
+                menuItems
+              }
               {click ?
                 <>
                   <li className={s.navItem}><a href="#">Log in</a></li>
