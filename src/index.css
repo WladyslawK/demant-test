@@ -1,5 +1,21 @@
+html{
+  width: 100%;
+  height: 100%;
+  background-image: url('https://s3-alpha-sig.figma.com/img/4062/033e/3fcb5d1f0aa336064d15598fe3db82cc?Expires=1674432000&Signature=ab9j~aW1AINvmNK7B8Dl1fXxMmDQQQLwp89n4n6dV45tMoaJfu2gCuEmQpHyheeQml9vnOAXEiKEwNxu7448BxOWqcn6sUCfLeRPSJAVrs0TK65Xl706EKYr~4uT1Xywl~pyszaKoaoXPasKpDAmdz45pIvYPE8vDcXE1ul~vLxXvdicDXnNZ7Dak2EmaPQqWBSovwds5JyWhdDURu087EDuYAacz8JnNnEjviPdx6zpMHBwUXINl-jbKU2IIjRAL7X2DPgT3ohRw8BBeXGpVa-fo7nbZC4J~6eU33JCImtyozt47SIOFLNA3shn-00bMRvL6unUgFUbE1VvO4s5EQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+  background-size: cover;
+  background-position: unset;
+  filter: saturate(100%);
+  background-repeat: no-repeat;
+  overflow: clip;
+}
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family: Cera Pro, sans-serif;
+  width: 100%;
+  height: 100%;
+
 }
+
+
