@@ -1,15 +1,14 @@
 import React from 'react'
 import './App.css'
 import {Navbar} from "../components/navbar/Navbar"
-import Test from "../components/test";
-import {Button} from "../components/button/Button";
+import {Section} from "../components/section/Section";
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <Navbar/>
-      <Button size={'big'} buttonStyle={'primary'}>Get Started</Button>
-    </>
+      <Section/>
+    </div>
   )
 }
 
