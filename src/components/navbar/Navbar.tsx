@@ -23,10 +23,11 @@ export const Navbar = () => {
   };
 
   useEffect(() => {
+    window.addEventListener('resize', showButton);
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+
 
   const menuImage = <img onClick={handleClick} className={s.menuIcon} src={click ? closeIcon : menuIcon} alt="menu"/>
 
